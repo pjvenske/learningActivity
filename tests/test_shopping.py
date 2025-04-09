@@ -10,7 +10,7 @@ def test_calculate_total_with_tax():
 def test_calculate_total_with_tax_empty_list():
     items = []
     total = calculate_total_with_tax(items)
-    expected = 5  # No items, total should be 0
+    expected = 0.00  # No items, total should be 0
     assert total == expected
 
 def test_calculate_total_with_tax_single_item():
